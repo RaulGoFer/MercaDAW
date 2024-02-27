@@ -2,9 +2,9 @@ package es.etg.daw.programacio.practica.mercadaw;
 
 public class Droguería extends Producto {
 
-    public static final double IVA = 0.10;
+    public final double IVA = 10;
 
-    public Droguería(String nombre, String marca, double precio, double altura, double anchura, double peso, int componentes, String descripcion, double iva){
+    public Droguería(String nombre, String marca, double precio, double altura, double anchura, double peso, int componentes, String descripcion){
         super(nombre, marca, precio, altura, anchura, peso, componentes, descripcion);
     }
 
