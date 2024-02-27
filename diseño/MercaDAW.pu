@@ -43,7 +43,8 @@ class Encargado{
 }
 
 interface IGestionable{
-
+	+ agregar(Producto): void
+    + agregar(Empleado): void
 }
 
 interface IImprimible{
