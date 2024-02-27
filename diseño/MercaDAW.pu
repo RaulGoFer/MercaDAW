@@ -1,0 +1,63 @@
+@startuml
+
+class Supermercado{
+    
+}
+
+class Cliente{
+    - códigoPostal: int
+    - correoElectrónico: String
+    - nombre: String
+}
+
+abstract class Producto{
+    - iva: double
+}
+
+class Alimentación{
+    + IVA: double = 0.04   
+}
+
+class Droguería{
+    + IVA: double = 0.1    
+}
+
+class Cosmética{
+    + IVA: double = 0.21    
+}
+
+class Empleado{
+    + SUELDO: int = 1000
+}
+
+class Reponedor{
+    + SUELDO: int = 1200
+}
+
+class Cajero{
+    + SUELDO: int = 1300
+}
+
+class Encargado{
+    + SUELDO: int = 1500   
+}
+
+interface IGestionable{
+
+}
+
+interface IImprimible{
+    
+}
+
+Supermercado o-- Producto
+Supermercado o-- Empleado
+Supermercado o-- Cliente
+Producto <|-- Alimentación
+Producto <|-- Droguería
+Producto <|-- Cosmética
+Empleado <|-- Reponedor
+Empleado <|-- Cajero
+Empleado <|-- Encargado
+
+@enduml
