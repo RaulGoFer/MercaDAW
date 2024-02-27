@@ -1,20 +1,16 @@
 package es.etg.daw.programacio.practica.mercadaw;
 
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.IGestionable;
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.IImprimible;
-
-public abstract class Producto implements IGestionable, IImprimible {
+public abstract class Producto{
     private String nombre;
     private String marca;
     private double precio;
     private double altura;
     private double anchura;
     private double peso;
-    private double iva;
     private int componentes;
     private String descripcion;
 
-    public Producto(String nombre, String marca, double precio, double altura, double anchura, double peso, int componentes, String descripcion, double iva) {
+    public Producto(String nombre, String marca, double precio, double altura, double anchura, double peso, int componentes, String descripcion) {
         this.nombre = nombre;
         this.marca = marca;
         this.precio = precio;
@@ -23,7 +19,6 @@ public abstract class Producto implements IGestionable, IImprimible {
         this.peso = peso;
         this.componentes = componentes;
         this.descripcion = descripcion;
-        this.iva = iva;
     }
 
     public String getNombre() {
@@ -74,14 +69,6 @@ public abstract class Producto implements IGestionable, IImprimible {
         this.peso = peso;
     }
 
-    public double getIva() {
-        return iva;
-    }
-
-    public void setIva(double iva) {
-        this.iva = iva;
-    }
-
     public int getComponentes() {
         return componentes;
     }
@@ -96,6 +83,27 @@ public abstract class Producto implements IGestionable, IImprimible {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public abstract String getCategoria();
+    public abstract double getIVA();
+
+    @Override
+    public String toString() {
+        
+        final String MSG_NOMBRE ="Nombre: ";
+        final String MSG_MARCA = "Marca: ";
+        final String MSG_CATEGORIA= "Categoría: ";        
+        final String MSG_PRECIO = "Precio en Euros: ";
+        final String MSG_IVA = "IVA: ";
+        final String MSG_PESO = "Peso en kg: ";
+        final String MSG_ALTURA = "Altura en metros: ";
+        final String MSG_ANCHURA = "Anchura en metros: ";
+        final String MSG_COMPONENTES = "Número de elementos: ";
+        final String MSG_DESCRIPCION = "Descripición: ";
+        final String UTILIDAD_N = "\n";
+
+        return UTILIDAD_N + MSG_NOMBRE + getNombre() + UTILIDAD_N + MSG_MARCA + getMarca() + UTILIDAD_N + MSG_CATEGORIA + getCategoria() + UTILIDAD_N + MSG_PRECIO + getPrecio() + UTILIDAD_N + MSG_IVA + getIVA() + UTILIDAD_N + MSG_PESO + getPeso() + UTILIDAD_N + MSG_ALTURA + getAltura() + UTILIDAD_N + MSG_ANCHURA + getAnchura() + UTILIDAD_N + MSG_COMPONENTES + getComponentes() + UTILIDAD_N + MSG_DESCRIPCION + getDescripcion() + UTILIDAD_N;
     }
 
 }
