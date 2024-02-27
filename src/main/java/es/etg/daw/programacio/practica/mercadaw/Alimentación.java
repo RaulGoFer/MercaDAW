@@ -1,5 +1,5 @@
 package es.etg.daw.programacio.practica.mercadaw;
 
-public class Supermercado {
+public class Alimentación extends Producto{
     
 }

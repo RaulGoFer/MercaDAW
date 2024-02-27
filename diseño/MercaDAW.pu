@@ -59,5 +59,8 @@ Producto <|-- Cosmética
 Empleado <|-- Reponedor
 Empleado <|-- Cajero
 Empleado <|-- Encargado
+IGestionable <|.. Empleado
+IGestionable <|.. Producto
+IImprimible <|.. Producto
 
 @enduml
