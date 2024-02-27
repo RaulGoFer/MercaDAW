@@ -3,7 +3,7 @@ package es.etg.daw.programacio.practica.mercadaw;
 import es.etg.daw.programacio.practica.mercadaw.Utilidades.IGestionable;
 import es.etg.daw.programacio.practica.mercadaw.Utilidades.IImprimible;
 
-public abstract class Producto implements IGestionable, IImprimible {
+public abstract class Producto{
     private String nombre;
     private String marca;
     private double precio;

@@ -2,7 +2,7 @@ package es.etg.daw.programacio.practica.mercadaw;
 
 import es.etg.daw.programacio.practica.mercadaw.Utilidades.IGestionable;
 
-public class Empleado implements IGestionable {
+public class Empleado{
     public static final double SUELDO = 1000;
 
     private int identificador;
