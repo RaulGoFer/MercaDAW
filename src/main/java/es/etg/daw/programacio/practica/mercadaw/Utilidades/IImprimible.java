@@ -1,4 +1,4 @@
-package es.etg.daw.programacio.practica.mercadaw.Utilidades;
+package es.etg.daw.programacio.practica.mercadaw.utilidades;
 
 public interface IImprimible {
     public String imprimir();

@@ -1,4 +1,4 @@
-package es.etg.daw.programacio.practica.mercadaw.DAWMarket;
+package es.etg.daw.programacio.practica.mercadaw.dawmarket;
 
 public class Cajero extends Empleado{
 

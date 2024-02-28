@@ -1,7 +1,7 @@
-package es.etg.daw.programacio.practica.mercadaw.Utilidades;
+package es.etg.daw.programacio.practica.mercadaw.utilidades;
 
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Empleado;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Producto;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Empleado;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Producto;
 
 public interface IGestionable {
     public void darAlta(Producto producto);

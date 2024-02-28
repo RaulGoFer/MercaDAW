@@ -5,11 +5,11 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Empleado;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Producto;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Supermercado;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Ticket;
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.Categoria;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Empleado;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Producto;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Supermercado;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Ticket;
+import es.etg.daw.programacio.practica.mercadaw.utilidades.Categoria;
 
 public class Main {
 
