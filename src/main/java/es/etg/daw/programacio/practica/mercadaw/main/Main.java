@@ -129,18 +129,17 @@ public class Main {
         final String MSG_INTRO_COMPONENTES = "\n Introduce el número de componentes del producto: ";
         final String MSG_INTRO_DESCRIPCION = "\n Introduce la descripción del producto: ";
         final String MSG_INTRO_CATEGORIA = "\n Introduce la categoría del producto (ALIMENTACION, DROGUERIA, COSMETICA): ";
-        final String MSG_EXCEPCION = "Introoduce una categoria válida. + \n";
+        final String MSG_EXCEPCION = "Introoduce una categoria válida.\n";
 
         String stringCategoria = leerString(MSG_INTRO_CATEGORIA);
         Categoria categoria = null;
 
-        while (categoria == null) {
             try {
                 categoria = Categoria.valueOf(stringCategoria.toUpperCase());
             } catch (IllegalArgumentException categoriaInvalida) {
                 System.out.println(MSG_EXCEPCION);
             }
-        }
+
 
         return supermercado.crearProducto(categoria, leerString(MSG_INTRO_NOMBRE), leerString(MSG_INTRO_MARCA),
                 leerDouble(MSG_INTRO_PRECIO), leerDouble(MSG_INTRO_ALTURA), leerDouble(MSG_INTRO_ANCHURA),

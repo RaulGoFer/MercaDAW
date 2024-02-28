@@ -3,8 +3,8 @@ package es.etg.daw.programacio.practica.mercadaw.dawmarket;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.Categoria;
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.IGestionable;
+import es.etg.daw.programacio.practica.mercadaw.utilidades.Categoria;
+import es.etg.daw.programacio.practica.mercadaw.utilidades.IGestionable;
 
 public class Supermercado implements IGestionable {
     private String nombre;

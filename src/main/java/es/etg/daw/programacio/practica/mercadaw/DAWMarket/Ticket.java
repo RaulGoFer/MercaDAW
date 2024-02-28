@@ -2,7 +2,7 @@ package es.etg.daw.programacio.practica.mercadaw.dawmarket;
 
 import java.util.List;
 
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.IImprimible;
+import es.etg.daw.programacio.practica.mercadaw.utilidades.IImprimible;
 
 public class Ticket implements IImprimible {
     private List<Producto> productos;
