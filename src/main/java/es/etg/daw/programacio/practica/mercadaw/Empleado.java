@@ -54,4 +54,9 @@ public class Empleado{
         this.seccion = seccion;
     }
 
+    @Override
+    public String toString() {
+        return this.identificador + this.nombre + this.apellidos + this.seccion;
+    }
+
 }
