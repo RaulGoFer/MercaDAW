@@ -3,8 +3,8 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Empleado;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Supermercado;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Empleado;
+import es.etg.daw.programacio.practica.mercadaw.dawmarket.Supermercado;
 
 public class CreacionListaTest {
     
