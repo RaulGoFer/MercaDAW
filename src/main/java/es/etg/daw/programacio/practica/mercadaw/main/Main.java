@@ -110,17 +110,17 @@ public class Main {
     }
 
     public static void calcularProductos(List<Producto> productos) {
-        final float INCREMENTO_25 = 1.25f;
-        final float INCREMENTO_15 = 0.15f;
-        final float INCREMENTO_10 = 0.10f;
-        final float INCREMENTO_5 = 0.05f;
+        final double INCREMENTO_25 = 1.25;
+        final double INCREMENTO_15 = 0.15;
+        final double INCREMENTO_10 = 0.10;
+        final double INCREMENTO_5 = 0.05;
         final int PESO_MIN = 1;
         final int PESO_MAX = 5;
-        final float ALTURA_LIMITE = 0.5f;
-        final float ANCHURA_LIMITE = 0.5f;
-        final float CENTIMOS = 0.10f;
+        final double ALTURA_LIMITE = 0.5;
+        final double ANCHURA_LIMITE = 0.5;
+        final double CENTIMOS = 0.10;
         final int COMPONENTES_LIMITE = 2;
-        final float CONVERSION = 0.90f;
+        final double CONVERSION = 0.90;
         final String EURO = "€";
         final String DOLLAR = "$";
         final String BARRA = "/";
