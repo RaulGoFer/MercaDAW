@@ -44,23 +44,16 @@ public class Main {
 
     public static void imprimirMenu() {
         final String MSG_BIENVENIDA = "BIENVENIDO!! ";
-        final String MSG_CONTRATAR_T = "Introduce 1 para contratar a un trabajador: ";
-        final String MSG_AGREGAR_BEBIDA = "Introduce 2 para agregar una bebida: ";
-        final String MSG_AGREGAR_COMIDA = "Introduce 3 para agregar una comida: ";
-        final String MSG_DESPEDIR_T = "Introduce 4 para despedir a un trabajador: ";
-        final String MSG_ELIMINAR_CONS = "Introduce 5 para eliminar una consumición: ";
-        final String MSG_LISTADO_CONS = "Introduce 6 para obtener un listado de las consumiciones: ";
-        final String MSG_LISTAR_T = "Introduce 7 para obtener un listado de los trabajadores: ";
-        final String MSG_IMPRIMIR_N = "Introduce 8 para imprimir una nomina: ";
-        final String MSG_IMPRIMIR_M = "Introduce 9 para imprimir un menu: ";
+        final String MSG_ALTA_EMPLEADO = "Introduce 1 para dar de alta a un empleado: ";
+        final String MSG_ALTA_PRODUCTO = "Introduce 2 para dar de alta a un producto: ";
+        final String MSG_VISUALIZAR_PRODUCTO = "Introduce 3 para visualizar el producto: ";
+        final String MSG_VISUALIZAR_EMPLEADO = "Introduce 4 para visualizar a los empleados: ";
+        final String MSG_CALCULAR_PRECIO = "Introduce 5 para calcular el precio del producto: ";
+        final String MSG_IMPRIMIR_TICKET = "Introduce 6 para imprimir un ticket de compra: ";
         final String MSG_SALIR = "Introduce 0 para cerrar el programa: ";
         final String UTILIDAD_N = "\n";
 
-        System.out.println(UTILIDAD_N + MSG_BIENVENIDA + UTILIDAD_N + UTILIDAD_N + MSG_CONTRATAR_T + UTILIDAD_N
-                + MSG_AGREGAR_BEBIDA + UTILIDAD_N + MSG_AGREGAR_COMIDA + UTILIDAD_N + MSG_DESPEDIR_T + UTILIDAD_N
-                + MSG_ELIMINAR_CONS + UTILIDAD_N
-                + MSG_LISTADO_CONS + UTILIDAD_N + MSG_LISTAR_T + UTILIDAD_N + MSG_IMPRIMIR_N + UTILIDAD_N
-                + MSG_IMPRIMIR_M + UTILIDAD_N + MSG_SALIR + UTILIDAD_N);
+        System.out.println(UTILIDAD_N + MSG_BIENVENIDA + UTILIDAD_N + UTILIDAD_N + MSG_ALTA_EMPLEADO + UTILIDAD_N + MSG_ALTA_PRODUCTO + UTILIDAD_N + MSG_VISUALIZAR_PRODUCTO + UTILIDAD_N + MSG_VISUALIZAR_EMPLEADO + UTILIDAD_N + MSG_CALCULAR_PRECIO + UTILIDAD_N + MSG_IMPRIMIR_TICKET + UTILIDAD_N + MSG_SALIR + UTILIDAD_N);
     }
 
     public static Supermercado inicializarSupermercado(List<Empleado> empleados, List<Producto> productos) {
