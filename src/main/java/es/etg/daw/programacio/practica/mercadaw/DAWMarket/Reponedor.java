@@ -1,4 +1,4 @@
-package es.etg.daw.programacio.practica.mercadaw;
+package es.etg.daw.programacio.practica.mercadaw.DAWMarket;
 
 public class Reponedor extends Empleado{
     public static final double SUELDO = 1200;  

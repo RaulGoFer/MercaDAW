@@ -1,4 +1,4 @@
-package es.etg.daw.programacio.practica.mercadaw;
+package es.etg.daw.programacio.practica.mercadaw.DAWMarket;
 
 public class Droguería extends Producto {
 

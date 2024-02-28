@@ -1,4 +1,4 @@
-package es.etg.daw.programacio.practica.mercadaw;
+package es.etg.daw.programacio.practica.mercadaw.DAWMarket;
 
 public abstract class Producto{
     private String nombre;
@@ -104,6 +104,15 @@ public abstract class Producto{
         final String UTILIDAD_N = "\n";
 
         return UTILIDAD_N + MSG_NOMBRE + getNombre() + UTILIDAD_N + MSG_MARCA + getMarca() + UTILIDAD_N + MSG_CATEGORIA + getCategoria() + UTILIDAD_N + MSG_PRECIO + getPrecio() + UTILIDAD_N + MSG_IVA + getIVA() + UTILIDAD_N + MSG_PESO + getPeso() + UTILIDAD_N + MSG_ALTURA + getAltura() + UTILIDAD_N + MSG_ANCHURA + getAnchura() + UTILIDAD_N + MSG_COMPONENTES + getComponentes() + UTILIDAD_N + MSG_DESCRIPCION + getDescripcion() + UTILIDAD_N;
+    }
+
+    public String generarTicket() {
+        final String MSG_NOMBRE ="\nNombre: ";
+        final String MSG_MARCA = "\nMarca: ";
+        final String MSG_CATEGORIA= "\nCategoría: ";
+        final String MSG_DESCRIPCION = "\nDescripición: ";
+
+        return MSG_NOMBRE + getNombre() + MSG_MARCA + getMarca() + MSG_CATEGORIA + getCategoria() + MSG_DESCRIPCION + getDescripcion();
     }
 
 }

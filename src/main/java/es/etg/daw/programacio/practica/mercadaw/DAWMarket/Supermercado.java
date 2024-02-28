@@ -1,4 +1,4 @@
-package es.etg.daw.programacio.practica.mercadaw;
+package es.etg.daw.programacio.practica.mercadaw.DAWMarket;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,7 +91,10 @@ public class Supermercado implements IGestionable {
         }
     }
 
-    public static Producto crearProducto(Categoria categoria, String nombre, String marca, double precio, double altura, double anchura, double peso, int componentes, String descripcion) {
+    public Producto crearProducto(Categoria categoria, String nombre, String marca, double precio, double altura, double anchura, double peso, int componentes, String descripcion){
+        
+        final String MSG_EXCEPCION = "La categoria del producto que has introducido es inválida";
+        
         switch (categoria) {
             case ALIMENTACION:
                 return new Alimentación(nombre, marca, precio, altura, anchura, peso, componentes, descripcion);
@@ -99,7 +102,8 @@ public class Supermercado implements IGestionable {
                 return new Droguería(nombre, marca, precio, altura, anchura, peso, componentes, descripcion);
             case COSMETICA:
                 return new Cosmética(nombre, marca, precio, altura, anchura, peso, componentes, descripcion);
-            
+            default:
+            throw new IllegalArgumentException(MSG_EXCEPCION + categoria);
         }
     }
 
