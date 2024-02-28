@@ -1,6 +1,7 @@
 package es.etg.daw.programacio.practica.mercadaw.main;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,33 +14,78 @@ import es.etg.daw.programacio.practica.mercadaw.Utilidades.Categoria;
 public class Main {
 
     public static int leerInt(String msg) {
+        final String ERROR_INCOPATIBILIDAD = "Debes introducir un número.";
+        final String ERROR_ESCANER = "El escaner se ha cerrado.";
+        final String ERROR_DESCONOCIDO = "El programa ha fallado por un error desconocido.";
+        final String UTILIDAD = "\n";
+
         int numero = 0;
 
-        System.out.println(msg);
-        Scanner sc = new Scanner(System.in);
-        numero = sc.nextInt();
+        try{
+            Scanner sc = new Scanner(System.in);
+            System.out.println(msg);
+            numero = sc.nextInt();
+
+        }catch(InputMismatchException e){
+            System.out.println(ERROR_INCOPATIBILIDAD + UTILIDAD);
+                
+        }catch(IllegalStateException e){
+            System.out.println(ERROR_ESCANER + UTILIDAD);
+                
+        }catch(Exception e){
+            System.out.println(ERROR_DESCONOCIDO + UTILIDAD);
+        }
 
         return numero;
     }
 
     public static double leerDouble(String msg) {
+        final String ERROR_INCOPATIBILIDAD = "Debes introducir un número.";
+        final String ERROR_ESCANER = "El escaner se ha cerrado.";
+        final String ERROR_DESCONOCIDO = "El programa ha fallado por un error desconocido.";
+        final String UTILIDAD = "\n";
+
         double numero = 0;
 
-        System.out.println(msg);
-        Scanner sc = new Scanner(System.in);
-        numero = sc.nextDouble();
+        try{
+            Scanner sc = new Scanner(System.in);
+            System.out.println(msg);
+            numero = sc.nextInt();
+
+        }catch(InputMismatchException e){
+            System.out.println(ERROR_INCOPATIBILIDAD + UTILIDAD);
+                
+        }catch(IllegalStateException e){
+            System.out.println(ERROR_ESCANER + UTILIDAD);
+                
+        }catch(Exception e){
+            System.out.println(ERROR_DESCONOCIDO + UTILIDAD);
+        }
 
         return numero;
     }
 
     public static String leerString(String msg) {
-        String numero = "";
+        final String ERROR_ESCANER = "El escaner se ha cerrado.";
+        final String ERROR_DESCONOCIDO = "El programa ha fallado por un error desconocido.";
+        final String UTILIDAD = "\n";
 
-        System.out.println(msg);
-        Scanner sc = new Scanner(System.in);
-        numero = sc.nextLine();
+        String cadena = "";
+        
+        try{
 
-        return numero;
+            System.out.println(msg);
+            Scanner sc = new Scanner(System.in);
+            cadena = sc.nextLine();
+
+        }catch(IllegalStateException e){
+            System.out.println(ERROR_ESCANER + UTILIDAD);
+
+        }catch(Exception e){
+            System.out.println(ERROR_DESCONOCIDO + UTILIDAD);
+        }
+
+        return cadena;
     }
 
     public static void imprimirMenu() {

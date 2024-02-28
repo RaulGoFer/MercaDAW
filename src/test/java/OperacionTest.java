@@ -3,7 +3,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Alimentación;
-import es.etg.daw.programacio.practica.mercadaw.DAWMarket.Producto;
+
 
 public class OperacionTest {
 
