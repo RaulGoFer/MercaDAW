@@ -1,17 +1,17 @@
 package es.etg.daw.programacio.practica.mercadaw;
 
-import es.etg.daw.programacio.practica.mercadaw.Utilidades.IGestionable;
 
 public class Empleado{
     public static final double SUELDO = 1000;
 
+    private static int idIncremental = 1;
     private int identificador;
     private String nombre;
     private String apellidos;
     private String seccion;
 
-    public Empleado(int identificador, String nombre, String apellidos, String seccion, double sueldo) {
-        this.identificador = identificador;
+    public Empleado(String nombre, String apellidos, String seccion, double sueldo) {
+        this.identificador = idIncremental ++;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.seccion = seccion;
@@ -52,6 +52,14 @@ public class Empleado{
 
     public void setSeccion(String seccion) {
         this.seccion = seccion;
+    }
+
+
+    @Override
+    public String toString() {
+        final String UTILIDAD_T = "\t";
+        final String UTILIDAD_N = "\n";
+        return this.identificador + UTILIDAD_T + this.nombre + UTILIDAD_T + this.apellidos + UTILIDAD_T + this.seccion + UTILIDAD_N;
     }
 
 }

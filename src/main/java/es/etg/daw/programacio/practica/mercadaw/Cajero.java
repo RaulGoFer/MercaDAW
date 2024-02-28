@@ -4,7 +4,7 @@ public class Cajero extends Empleado{
 
     public static final double SUELDO = 1300;    
 
-    public Cajero(int identificador, String nombre, String apellidos, String seccion) {
-        super(identificador, nombre, apellidos, seccion, SUELDO);
+    public Cajero(String nombre, String apellidos, String seccion) {
+        super(nombre, apellidos, seccion, SUELDO);
     }
 }
