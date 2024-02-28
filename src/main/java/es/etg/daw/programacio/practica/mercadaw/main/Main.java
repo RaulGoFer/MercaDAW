@@ -1,16 +1,30 @@
 package es.etg.daw.programacio.practica.mercadaw.main;
 
-import es.etg.daw.programacio.practica.mercadaw.Alimentación;
-import es.etg.daw.programacio.practica.mercadaw.Cosmética;
+import java.util.ArrayList;
+import java.util.List;
+
+import es.etg.daw.programacio.practica.mercadaw.Empleado;
 
 public class Main {
+
+    public static void mostrarEmpleados(List<Empleado> empleados){
+
+        for (Empleado empleado : empleados) {
+            System.out.println(empleado);
+        }
+    }
+
+
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        Alimentación a = new Alimentación("pepe", "daw", 5, 0.20, 0.27, 5, 3, "hola");
-        System.out.println(a);
+        Empleado e = new Empleado(2, "Eternocleidomastoideo", "sanchez", null, 3);       
+        Empleado e1 = new Empleado(2, "hola", "s", null, 3);
+        List<Empleado> empleados = new ArrayList<Empleado>();
+        empleados.add(e);
+        empleados.add(e1);
+        mostrarEmpleados(empleados);
 
-        Cosmética c = new Cosmética("NOMBRE", "DAW", 5, 5, 5, 5, 5, null);
-        System.out.println(c.toString());
     }
 }

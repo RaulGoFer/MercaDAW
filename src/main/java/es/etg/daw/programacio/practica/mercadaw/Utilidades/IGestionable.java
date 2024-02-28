@@ -4,8 +4,8 @@ import es.etg.daw.programacio.practica.mercadaw.Empleado;
 import es.etg.daw.programacio.practica.mercadaw.Producto;
 
 public interface IGestionable {
-    public void agregar(Producto producto);
-    public void agregar(Empleado empleado);
+    public void darAlta(Producto producto);
+    public void darAlta(Empleado empleado);
 
 
 }
