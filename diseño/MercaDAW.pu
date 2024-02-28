@@ -42,22 +42,31 @@ class Encargado{
     + SUELDO: int = 1500   
 }
 
-interface IGestionable{
+class Ticket{
+ 
+}
 
+interface IGestionable{
+	+ agregar(Producto): void
+    + agregar(Empleado): void
 }
 
 interface IImprimible{
-    
+    + imprimir(): void
 }
 
 Supermercado o-- Producto
 Supermercado o-- Empleado
 Supermercado o-- Cliente
+Ticket o-- Producto
 Producto <|-- Alimentación
 Producto <|-- Droguería
 Producto <|-- Cosmética
 Empleado <|-- Reponedor
 Empleado <|-- Cajero
 Empleado <|-- Encargado
+IGestionable <|.. Supermercado
+IImprimible <|.. Ticket
+
 
 @enduml
